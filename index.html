@@ -18,21 +18,29 @@
         <figure class="header__logo">
             <img src="./img/icon 7.png" alt="logo_tuatara" srcset="">
         </figure>
-        <div class="header__menu">
+        <div class="header__container-menu">
             <ul class="menu__container">
-                <li><a class="menu__container-a"href="#">Full services</a></li>
-                <li><a class="menu__container-a"href="#">World wide</a></li>
+                <li><a class="menu__container-a" href="#service">Full services</a></li>
+                <li><a class="menu__container-a" href="#world">World wide</a></li>
                 <li><a class="menu__container-a"href="#">El nido</a></li>
-                <li><a class="menu__container-a"href="#">Contact</a></li>
-                <lu class="menu__container-idiom">
+                <li><a class="menu__container-a"href="#contact">Contact</a></li>
+                <lu class="menu__container-idiom idiom">
                     <li><a class="menu__container-a"href="#">ES</a></li>
                     <li><a class="menu__container-a"href="#">|</a></li>
                     <li><a class="menu__container-a"href="#">EN</a></li>
                 </lu>
             </ul>
         </div>
+        <div class="header__menu">
+            <a class="header__menu-a" href="#"><span class="header__menu-span fas fa-bars"></span></a>
+            <lu class="menu__container-idiom">
+                <li><a class="menu__container-a"href="#">ES</a></li>
+                <li><a class="menu__container-a"href="#">|</a></li>
+                <li><a class="menu__container-a"href="#">EN</a></li>
+            </lu>
+        </div>
     </header>
-    <main class="main">
+    <main class="main" id="home">
         <section class="main__banner">
             <figure>
                 <img class="figure__banner"src="./img/mockup-home.jpg" alt="" srcset="">
@@ -60,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="main__service">
+        <section class="main__service" id="service">
             <div class="container__service">
                 <figure class="service__figure-logo"><img class="service__logo"src="./img/Services.png" alt="Services" sizes="" srcset=""></figure>
                 <div class="container__full-service">
@@ -149,7 +157,7 @@
             </div>
         </section>
 
-        <section class="main__happy">
+        <section class="main__happy" id="world">
             <div class="happy__container">
                 <div class="happy__container-description">
                 <div class="happy__container-box">
@@ -178,7 +186,7 @@
             </div>
         </section>
 
-        <section class="main__contact">
+        <section class="main__contact" id="contact">
             <figure><img class="main__contact-img"src="./img/contacto-home.png" alt="" srcset=""></figure>
             <div class="main__contact-container">
                 <h2 class="container__title-h">CONTACT <span class="container__title-span">US</span></h2>
@@ -190,21 +198,21 @@
                             <input type="text" class="form__input" id="name" placeholder="Name" name="name">
                             <span class="form__circle fas fa-times-circle"></span>
                         </div>
-                        <p class="form__input-error">El nombre solo puede contener letras</p>
+                        <p class="form__input-error">name must contain only letters</p>
                     </div>
                     <div class="container__contact-name" id="form__email">
                         <div class="contact__input" id='form__input-email'>
                             <input type="email" class="form__input" id="email" placeholder="Email" name="email">
                             <span class="form__circle fas fa-times-circle"></span>
                         </div>
-                        <p class="form__input-error">El correo debe ser valido. Solo puede contener letras, numeros, puntos, guiones y guion bajo</p>
+                        <p class="form__input-error">email address must be valid and contain only A-z; 0-1; .; -; _</p>
                     </div>
                     <div class="container__contact-name" id="form__phone">
                         <div class="contact__input" id='form__input-phone'>
                             <input type="text" class="form__input" id="phone" placeholder="Phone" name="phone">
                             <span class="form__circle fas fa-times-circle"></span>
                         </div>
-                        <p class="form__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos</p>
+                        <p class="form__input-error">Phone number must contain only number, Max digits 14</p>
                     </div>
                     <div class="container__contact-name" id="form__description">
                         <div class="contact__input" id='form__input-name'>
@@ -232,17 +240,17 @@
                 <li class="footer__about-li">(57) (1) 3002100127</li>
             </ul>
             <ul class="footer__about-ul">ABOUT US
-                <li class="footer__about-li"><a href="">Home</a></li>
-                <li class="footer__about-li"><a href="">Software and Tech</a></li>
-                <li class="footer__about-li"><a href="">Pure Desing</a></li>
-                <li class="footer__about-li"><a href="">Marketing</a></li>
-                <li class="footer__about-li"><a href="">Contact</a></li>
+                <li class="footer__about-li"><a href="#home">Home</a></li>
+                <li class="footer__about-li"><a href="#service">Software and Tech</a></li>
+                <li class="footer__about-li"><a href="#service">Pure Desing</a></li>
+                <li class="footer__about-li"><a href="#service">Marketing</a></li>
+                <li class="footer__about-li"><a href="#contact">Contact</a></li>
                 <li class="footer__about-li"><a href="">Coworking</a></li>
             </ul>
             <ul class="footer__about-ul">ABOUT US
-                <li class="footer__about-li"><a href="">Facebook</a></li>
-                <li class="footer__about-li"><a href="">Instagram</a></li>
-                <li class="footer__about-li"><a href="">Linkedin</a></li>
+                <li class="footer__about-li"><a href="https://www.facebook.com/TuataraColombia/">Facebook</a></li>
+                <li class="footer__about-li"><a href="https://www.instagram.com/tuataraco/">Instagram</a></li>
+                <li class="footer__about-li"><a href="https://www.linkedin.com/company/tuatara-co/">Linkedin</a></li>
                 <li class="footer__about-li"><a href="">Behance</a></li>
             </ul>
             <div class="footer__about-nido"><figure><img class="footer__about-img"src="./img/El nido.PNG" alt="El nido"></figure>
@@ -260,13 +268,14 @@
             <div class="footer__icon-ul">
                 <ul>
                     <li class="footer-icon-social fab fa-behance"><a href=""></a></li>
-                    <li class="footer-icon-social fab fa-linkedin"><a href=""></a></li>
-                    <li class="footer-icon-social fab fa-instagram"><a href=""></a></li>
-                    <li class="footer-icon-social fab fa-facebook"><a href=""></a></li>
+                    <li class="footer-icon-social fab fa-linkedin"><a href="https://www.linkedin.com/company/tuatara-co/"></a></li>
+                    <li class="footer-icon-social fab fa-instagram"><a href="https://www.instagram.com/tuataraco/"></a></li>
+                    <li class="footer-icon-social fab fa-facebook"><a href="https://www.facebook.com/TuataraColombia/"></a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="./index.js"></script>

@@ -42,7 +42,7 @@ html{
     width: 35%;
 }
 
-.header__menu{
+.header__container-menu{
     align-items: center;
     justify-content: center;
     width: 70%;
@@ -60,11 +60,16 @@ html{
     width: 50%;
     display: flex;
     justify-content: space-around;
+    list-style: none;
 }
 
 .menu__container-a{
     color: var(--white);
     list-style: none;
+}
+
+.header__menu{
+    display: none;
 }
 
 .main{
@@ -704,11 +709,56 @@ html{
         max-width: 767px;
     }
     
+
     .main__banner{
         width: 100%;
         position: relative;
         height: 400px;
         background-color: var(--fund);
+    }
+
+    .idiom{
+        display: none;
+    }
+
+    .header__logo{
+        width: 100%;
+    }
+
+    .header__menu-span{
+        padding-right: 20px;
+    }
+
+    .menu__container{
+        display: grid;
+        z-index: 30;
+        /* height: 800px; */
+        /* background: red; */
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        /* margin-top: 20px; */
+    }
+
+    .header__container-menu{
+        top: 50px;
+        position: fixed;
+        left: 100%;
+        transition: 0.3s ease all;
+        height: 50px;
+    }
+
+
+    .header__container-menu.active{
+        width: 100%;
+        background-color: var(--description);
+        z-index: 40;
+        left: 0;
+        text-align: center;
+    }
+
+
+    .header__menu{
+        display: flex;
     }
 
     .banner__information{
